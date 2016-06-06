@@ -1,0 +1,161 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$colorBg: lightpink;
+$colorTypo: darkblue;
+
+body {
+  font-family:'Poiret One','Open Sans Condensed', sans-serif;
+  position: relative;
+  margin:0 auto;
+}
+
+#title {
+  position: fixed;
+  color: $colorBg;
+  font-size: 5em;
+  margin:15vw;
+  margin-top:20vh;
+  z-index:1;
+}
+
+.menu {
+  text-align: left;
+  position: fixed;
+  width: 5vw;
+  height: 9vh;
+  margin: 2vw;
+  margin-left: 75vw;
+  padding: 1vw;
+  line-height: 3vh;
+  background-color: $colorBg;
+  color: $colorTypo;
+  opacity: 0.8;
+  z-index:1;
+}
+
+h3:hover {
+  font-weight: bold;
+  cursor:pointer;
+}
+
+a:active {
+  color: $colorTypo;
+}
+
+a {
+  text-decoration: none;
+}
+
+.animTexte {
+  color: $colorTypo;
+  font-size: 1.3em;
+  padding: 2vw;
+  margin-top: 32vh;
+  animation-name:fondu;
+  animation-duration:3s;
+  animation-timing-function: ease-in-out;
+}
+
+.animTexte>h2 {
+  font-size:1.5em;
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+.photos {
+  width:60vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.photos:hover {
+   -webkit-filter: saturate(200%);
+}
+
+.about {
+  position: fixed;
+  width:60vw;
+  height: 93vh;
+  display: block;
+  margin-left: 19.5vw;
+  background-color: $colorBg;
+  text-align: left;
+}
+
+#croix {
+  position: fixed;
+  margin-left: 78.5vw;
+  margin-top: 5vh;
+  display: none;
+  z-index:1;
+}
+
+#croix:hover {
+  cursor:pointer;
+}
+
+#contact {
+  width:100%;
+  border-bottom: solid $colorBg 10vh;
+  bottom: 0;
+}
+
+#footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1vh;
+  line-height: 3vh;
+  color: $colorTypo;
+  bottom: 0;
+  width:100%
+}
+
+ul {
+  text-decoration: none;
+}
+
+li:hover {
+  font-weight: bold;
+}
+
+.copyright {
+  position: absolute;
+  text-align: center;
+  margin-bottom: 4vh;
+  color: $colorTypo;
+  bottom: 0;
+  width:100%
+}
+
+.nameMail {
+  margin-left:2vw;
+  margin-top:1vh;
+}
+
+.reseaux {
+  margin-right: 2vw;
+  margin-top:3vh;
+}
